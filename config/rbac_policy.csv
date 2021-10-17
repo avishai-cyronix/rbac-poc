@@ -1,0 +1,16 @@
+
+
+#sys_admin --> is defined in the model as super user that has access to all
+
+#account_owner
+#project_owner_permission
+
+# ACCOUNT OWNER
+p, account_owner_permission, *, read
+p, account_owner_permission, *, write
+g, account_owner, account_owner_permission
+
+# PROJECT OWNER
+p, project_owner_permission, project, read
+p, project_owner_permission, project, write
+g, project_owner, project_owner_permission
